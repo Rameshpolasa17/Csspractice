@@ -145,4 +145,31 @@ header{
     font-weight: 700;
     color: #282c3f;
     padding-bottom: 25px;
+    text-transform: uppercase;
+}
+.popular h3{
+    font-weight: 700;
+    color: #282c3f;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+}
+.popular a{
+    text-decoration: none;
+    color: #696b79;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    background: #fafbfc;
+    text-align: center;
+}
+.copyrights{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.bottom_text{
+    color: #94969f;
 }
