@@ -189,26 +189,4 @@ header{
 }
 .shop_container{
     display: flex;
-    justify-content: space-evenly;
-}
-.shop_img{
-    height: 380px;
-}
-.center{
-    text-align: center;
-}
-.cart{
-    display: flex;
-    justify-content: space-around;
-}
-.button{
-    
-}
-.text{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-}
-.des{
-    display: block;
 }
