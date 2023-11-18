@@ -28,15 +28,21 @@
             <input class="search_input" placeholder="Search for products,brands and more">
         </div>
         <div class="action_bar">
-            <span class="material-symbols-outlined profile_icon">
-                person <p class="profile_text">Profile</p>
-            </span>
-            <span class="material-symbols-outlined wishlist_icon">
-                favorite <p class="wishlist_text">WishList</p>
-            </span>
-            <span class="material-symbols-outlined shopping_icon">
-                shopping_bag <p class="bag_text">Bag</p>
-            </span>
+            <div class="action_container">
+                <span class="material-symbols-outlined action_icon">person</span>
+                <span class="action_name">Profile</span>
+            </div>
+
+            <div class="action_container">
+                <span class="material-symbols-outlined action_icon">favorite</span>
+                <span class="action_name">Wishlist</span>
+            </div>
+
+            <a class="action_container" href="">
+                <span class="material-symbols-outlined action_icon">shopping_bag</span>
+                <span class="action_name">Bag</span>
+                <span class="bag-item-count">0</span>
+            </a>
         </div>
     </header>
     <main>
@@ -51,6 +57,8 @@
             <a href=""><img class="image" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/8/4/6366f7f4-3942-4cbc-af0d-3b63c0f9add71691142685532-image_png45885503.png"></a>
             <a href=""><img class="image" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/8/4/7abcde7c-18e5-44c5-9cd9-c1490daa842a1691142533559-image_png2078004791.png" ></a>
             <a href=""><img class="image" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/8/3/d6529cc8-ff03-4d85-88b7-5358a1d5a46b1691057399814-image_png1830835492.png"></a>
+            <a href=""><img class="image" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/8/4/6366f7f4-3942-4cbc-af0d-3b63c0f9add71691142685532-image_png45885503.png"></a>
+            <a href=""><img class="image" src="https://assets.myntassets.com/w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2023/8/4/7abcde7c-18e5-44c5-9cd9-c1490daa842a1691142533559-image_png2078004791.png" ></a>
         </div>
         <div class="brands">Shop by category</div>
         <div class="brand_img">
@@ -72,36 +80,7 @@
         </div>
 
         <div class="shop">Apparel</div>
-        <div class="shop_container">
-            <a href=""><img class="shop_img" src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/22090122/2023/2/23/a6999277-79d6-4d67-9645-123d4403259b1677129300172MelangebyLifestyleKurtaSetsViscose1.jpg"></a>
-            <div class="text">BownBee
-                <p class="des">Girls Ethnic Motifs Foil Printed Ready to Wear Lehenga Choli</p>
-                <div class="button"><button>Add to cart</button></div>
-            </div>
-
-            <a href=""><img class="shop_img" src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/24230266/2023/10/19/54db6d1c-7ff2-47a9-8c54-c3c1ff9b65f01697716903405-Force-IX-Men-Regular-fit-Short-Sleeve-Crew-Neck-Tshirts-6716-1.jpg"></a>
-            <div class="text">Nautica
-                <p class="des" >Graphic Printed Pure Cotton Applique T-shirt</p>
-                <div class="button"><button>Add to cart</button></div>
-            </div>
-
-            <a href=""><img class="shop_img" src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/22967104/2023/5/2/8dd83210-ae1b-487c-8c4f-97caf8d555741683003694455MenBlackStretchSlimFitChinoPant1.jpg"></a>
-            <div class="text">Nautica
-                <p class="des">Men Mid-Rise Slim Fit Chinos</p>
-                <div class="button"><button>Add to cart</button></div>
-            </div>
-            <a href=""><img class="shop_img" src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/25093284/2023/9/21/1de9b36b-256f-498b-83df-a6bb20527d7a1695272241361LilPicksGirlsPinkGreenPrintedReadytoWearLehengaBlouseWithDup5.jpg"></a>
-            <div class="text">LilPicks
-                <p  class="des">Girls Ethnic Motifs Printed Ready to Wear Lehenga & Blouse With Dupatta
-                </p>
-                <div class="button"><button>Add to cart</button></div>
-            </div>
-
-            <a href=""><img class="shop_img" src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/24670120/2023/9/12/e0e6315f-a5f0-4f60-b76d-b266bf2bd4711694485532260BownBeeGirlsGreenRedPrintedFoilPrintReadytoWearLehengaBlouse1.jpg"></a>
-            <div class="text">BownBee
-                <p class="des">Girls Ethnic Motifs Foil Printed Ready to Wear Lehenga Choli</p>
-                <div class="button"><button>Add to cart</button></div>
-            </div>
+        <div class="items_container">
         </div>
 
 
@@ -142,7 +121,7 @@
 
 
         </div>
-        <div class="flex">
+        <div class="foot">
             <div class="popular">
                 <h3>Popular Searches</h3>
                 <a href="">Makeup | Dresses For Girls | T-Shirts | Sandals | Headphones | Babydolls | Blazers For Men | Handbags | Ladies Watches | Bags | Sport Shoes | Reebok Shoes | Puma Shoes | Boxers | Wallets | Tops | Earrings | Fastrack Watches | Kurtis | Nike | Smart Watches | Titan Watches | Designer Blouse | Gowns | Rings | Cricket Shoes | Forever 21 | Eye Makeup | Photo Frames | Punjabi Suits | Myntra Fashion Show | Lipstick | Saree | Watches | Dresses | Lehenga | Nike Shoes | Goggles | Suit | Chinos | Shoes | Adidas Shoes | Woodland |Shoes | Jewellery | Designers Sarees</a>
@@ -158,4 +137,6 @@
         </div>
     </footer>
 </body>
+<script src="data.js"></script>
+<script src="Myntra.js"></script>
 </html>

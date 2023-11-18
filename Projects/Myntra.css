@@ -9,8 +9,10 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 80px;
+    width: 100%;
     background-color: #ffff;
-    box-shadow: 5px 5px 20px #a9acc0;
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,.10);
+    position: fixed;
 }
 .logo{
     height: 36px;
@@ -70,35 +72,17 @@ header{
     opacity: 0.8;
     padding: 10px;
 }
-.profile_icon{
-    height: 20px;
-    padding: 10px;
-    box-sizing: content-box;
-    text-align: center;
+.action_bar {
+    display: flex;
+    min-width: 200px;
+    justify-content: space-evenly;
+    margin-top: 15px;
 }
-.wishlist_icon{
-    height: 20px;
-    padding: 10px;
-    box-sizing: content-box;
-    text-align: center;
-}
-.shopping_icon{
-    height: 20px;
-    padding: 10px;
-    box-sizing: content-box;
-    text-align: center;
-}
-.shopping_icon p{
-    font-size: 12px;
-    font-weight: bold;
-}
-.wishlist_icon p{
-    font-size: 12px;
-    font-weight: bold;
-}
-.profile_icon p{
-    font-size: 12px;
-    font-weight: bold;
+
+.action_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .banner{
     display: flex;
@@ -121,7 +105,9 @@ header{
 .image{
     height: 386px;
 }
-.brand_img{
+.brand_img {
+    width: 80%;
+    margin: 50px 10%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -160,7 +146,7 @@ header{
     font-size: 15px;
     padding-bottom: 5px;
 }
-.flex{
+.foot{
     display: flex;
     justify-content: space-evenly;
     background: #fafbfc;
@@ -187,6 +173,108 @@ header{
     font-weight: 700;
     margin: 50px 0px 20px 30px;
 }
-.shop_container{
+
+.item_container{
+    width: 250px;
+    
+}
+.item_img{
+    width: 100%;
+}
+.rating{
+    font-size: 12px;
+    font-weight: 700;
+}
+.brand_name{
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    color: #282c3f;
+    margin-bottom: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.item_name{
+    color: #535766;
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+    display: block;
+}
+.price{
+    margin-top: 10px;
+    color: #282c3f;
+    font-size: 14px;
+    white-space: nowrap;
+    line-height: 15px;
+}
+.current_price{
+    font-size: 14px;
+    font-weight: 700;
+    color: #282c3f;
+}
+.original_price{
+    text-decoration: line-through;
+    color: #7e818c;
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 12px;
+}
+.discount{
+    color: #ff905a;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.add_bag{
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 12px 15px;
+    min-width: 108px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #ff3e6c;
+    border: 1px solid #ff3e6c;
+    color: #fff;
+    /* -webkit-box-flex: 3;
+    -ms-flex: 3;
+    flex: 3; */
+    text-align: center;
+    width: 100%;
+    margin-right: 3%;
+    cursor: pointer;
+}
+.items_container{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.bag-item-count {
+    background-color: #f16565;
+    white-space: nowrap;
+    text-align: center;
+    line-height: 18px;
+    padding: 0 6px;
+    height: 18px;
+    position: relative;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #fff;
+    left: 13px;
+    top: -44px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.action_container {
+    text-decoration: none;
+}
+a.action_container {
+    color:black;
 }
